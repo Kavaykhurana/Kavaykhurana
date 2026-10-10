@@ -18,7 +18,6 @@ I build backend systems where AI does useful work without being trusted blindly:
 | **[Warden](https://github.com/Kavaykhurana/warden)** · [live](https://warden-mauve.vercel.app) | A permission-aware AI assistant for a college. Gemini picks a backend tool; Spring Security decides whether the user may run it. Sensitive actions need a second person's approval, and every decision goes into a hash-chained audit log. | Java 21, Spring Boot, Spring Security, Spring AI, PostgreSQL, React |
 | **[Aureus AI](https://github.com/Kavaykhurana/Aureus_Ai)** · [live](https://aureus-ai-command-center.onrender.com) | A multi-agent financial intelligence platform. Five agents (analyst, risk, compliance, strategist, guardrail) work through each query, and a human must approve before any trade executes. | TypeScript, React, Express, SQLite, SSE |
 | **[Tend](https://github.com/Kavaykhurana/tend)** | A family caregiving MCP server for Alexa+ that tracks medications, check-ins, appointments and family alerts. Includes an MCP Apps card and an Amazon Bedrock-driven Alexa+ simulator. | TypeScript, MCP SDK, Node `node:sqlite`, Amazon Bedrock |
-| **[P51 MIA Audit](https://github.com/Kavaykhurana/p51-mia-audit)** | A membership-inference audit of seven CIFAR-10 classifiers: shadow-model attacks, leakage vs. generalisation gap, mitigation curves and a disclosure report. | Python, scikit-learn, Ultralytics, Streamlit, SQLite |
 
 ## Skills
 
@@ -29,7 +28,6 @@ I build backend systems where AI does useful work without being trusted blindly:
 ![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css&logoColor=white)
@@ -59,7 +57,6 @@ I build backend systems where AI does useful work without being trusted blindly:
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white)
 
 **Testing & tools**
 
