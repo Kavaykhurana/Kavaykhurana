@@ -1,77 +1,76 @@
-# Hi, I'm Kavay Khurana
+# Kavay Khurana
 
-**Java backend developer · CSE @ Thapar Institute of Engineering & Technology ('28)**
+**Java backend engineer** · Spring Boot · Spring Security · Spring AI · PostgreSQL
+B.E. Computer Science & Engineering @ Thapar Institute of Engineering & Technology · Class of 2028
 
-I build backend systems where AI does useful work without being trusted blindly: permission-checked tool calls, human approval for sensitive actions, and audit logs you can verify.
+I build backends where AI gets real powers without being trusted blindly. The model can only *ask*: Spring Security decides, sensitive actions need a second human, and every decision lands in an audit log you can verify.
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-fortfolio--nine--dun.vercel.app-B9F25C?style=flat-square&logo=vercel&logoColor=black)](https://fortfolio-nine-dun.vercel.app)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-kavay--khurana-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kavay-khurana-437272322/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-kavaykhurana-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/kavaykhurana/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-530%2B_solved-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/u/kavaykhurana/)
 [![Email](https://img.shields.io/badge/Email-kavaykhurana4%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:kavaykhurana4@gmail.com)
 
 ---
 
-## Featured projects
+## Featured work
+
+### [Warden](https://github.com/Kavaykhurana/warden) — permission-aware AI assistant · [live demo](https://warden-mauve.vercel.app)
+
+`Java 21` `Spring Boot` `Spring Security` `Spring AI` `PostgreSQL` `React`
+
+- The AI chooses from **14 backend actions**; Spring Security re-checks every one as the signed-in user, so even a prompt-injected model cannot exceed that user's rights.
+- Grade changes and account deactivations need a **second approver**, enforced in code *and* by database constraints. Nobody approves their own request.
+- **Hash-chained audit log** across 15 event types: alter or delete any past entry and the chain breaks.
+- **135 unit and integration tests** (JUnit 5, Testcontainers), including a 56-case role × action authorization matrix, run on every build.
+
+### [DocBuddy](https://github.com/Kavaykhurana/docbuddy) — document Q&A with page-level citations · [live demo](https://docbuddy-sgg1.onrender.com)
+
+`Java 21` `Spring Boot` `Spring AI` `Spring Security` `PostgreSQL + pgvector` `React`
+
+- Every answer links to the **exact page** it came from, so it can be verified in one click.
+- **Hybrid retrieval**: semantic (pgvector) and keyword results fused with Reciprocal Rank Fusion in a single PostgreSQL query, catching exact terms like roll numbers and names that pure vector search misses.
+- **No-answer path skips the LLM**: if your documents don't contain the answer, it says so instead of hallucinating one.
+- Stateless JWT auth, no stored files, database-level per-user isolation and daily API-spend quotas. **68 tests** in CI.
+
+### [Job-buddy](https://github.com/Kavaykhurana/Job-buddy) — academia–industry placement portal · [live demo](https://job-buddy-hs1e.onrender.com)
+
+`Java 21` `Spring Boot 4` `Spring Data JPA` `PostgreSQL` `React` `Docker`
+
+- Connects students, recruiters, institutions and academicians on one platform, matching on **assessed skills** instead of self-reported resumes.
+- Recruiters compare each candidate's skills against job requirements and shortlist in one click; institutions get industry-demand data for curriculum planning.
+- **Lead contributor** (38 of 60 commits, team of 3): built the Spring Boot 4 REST API (24 endpoints) and a single-container Docker deployment, live on Render with CI on every push.
+
+---
+
+## More I've built
 
 | Project | What it is | Stack |
 |---|---|---|
-| **[Warden](https://github.com/Kavaykhurana/warden)** · [live](https://warden-mauve.vercel.app) | A permission-aware AI assistant for a college. Gemini picks a backend tool; Spring Security decides whether the user may run it. Sensitive actions need a second person's approval, and every decision goes into a hash-chained audit log. | Java 21, Spring Boot, Spring Security, Spring AI, PostgreSQL, React |
-| **[Aureus AI](https://github.com/Kavaykhurana/Aureus_Ai)** · [live](https://aureus-ai-command-center.onrender.com) | A multi-agent financial intelligence platform. Five agents (analyst, risk, compliance, strategist, guardrail) work through each query, and a human must approve before any trade executes. | TypeScript, React, Express, SQLite, SSE |
-| **[Tend](https://github.com/Kavaykhurana/tend)** | A family caregiving MCP server for Alexa+ that tracks medications, check-ins, appointments and family alerts. Includes an MCP Apps card and an Amazon Bedrock-driven Alexa+ simulator. | TypeScript, MCP SDK, Node `node:sqlite`, Amazon Bedrock |
+| **[Aureus AI](https://github.com/Kavaykhurana/Aureus_Ai)** · [live](https://aureus-ai-command-center.onrender.com) | Multi-agent financial intelligence platform. Five agents (analyst, risk, compliance, strategist, guardrail) work each query; a human must approve before any trade executes. | TypeScript, React, Express, SQLite, SSE |
+| **[Tend](https://github.com/Kavaykhurana/tend)** | Family caregiving MCP server for Alexa+: medications, check-ins, appointments and family alerts, with an MCP Apps card and an Amazon Bedrock-driven Alexa+ simulator. | TypeScript, MCP SDK, Node, Amazon Bedrock |
+| **[StockPilot](https://github.com/Kavaykhurana/EnterPrise_web_project)** · [live](https://stockpilot-on32.onrender.com) | Inventory, purchasing and sales management system with a transactional REST backend. | Java 21, Spring Boot, PostgreSQL |
+| **[Enterprise CRM](https://github.com/Kavaykhurana/enterprise-crm)** | CRM backend built on Clean Architecture, DDD-lite and SOLID. | Java 21, Spring Boot, JPA, PostgreSQL |
+| **[P51 MIA Audit](https://github.com/Kavaykhurana/p51-mia-audit)** | Membership-inference audit of CIFAR-10 classifiers: can an attacker tell whether an image was in your training set? Seven classifiers, shadow-model attacks. | Python |
+| **[CodeBoard](https://github.com/Kavaykhurana/codeboard)** | Async code review for teams: submit snippets, assign reviewers, discuss in line-anchored threads. | JavaScript |
 
-## Skills
+---
 
-**Languages**
+## Stack
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css&logoColor=white)
+| Area | Tools |
+|---|---|
+| **Languages** | Java · C++ · C · Python · JavaScript · TypeScript · SQL |
+| **Backend** | Spring Boot · Spring Security · Spring AI · Spring Data JPA · Hibernate · REST · Microservices · Node.js · Express |
+| **Security** | JWT · OAuth2 · Refresh-token rotation · BCrypt · RBAC |
+| **Data** | PostgreSQL (+ pgvector) · MySQL · MongoDB · SQLite |
+| **Testing** | JUnit 5 · Mockito · Testcontainers |
+| **Infra & tools** | Docker · Maven · Git · GitHub · Render · Vercel · Railway |
+| **Frontend** | React · Vite · Tailwind CSS |
 
-**Backend**
+---
 
-![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
-![Spring AI](https://img.shields.io/badge/Spring_AI-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white)
-![Microservices](https://img.shields.io/badge/Microservices-0A66C2?style=flat-square&logo=serverless&logoColor=white)
-![REST APIs](https://img.shields.io/badge/REST_APIs-009688?style=flat-square&logo=fastapi&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
-![OAuth2](https://img.shields.io/badge/OAuth2-EB5424?style=flat-square&logo=auth0&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)
+## Also
 
-**Frontend**
-
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-
-**Databases**
-
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-
-**Testing & tools**
-
-![JUnit 5](https://img.shields.io/badge/JUnit_5-25A162?style=flat-square&logo=junit5&logoColor=white)
-![Testcontainers](https://img.shields.io/badge/Testcontainers-291A3F?style=flat-square&logo=testcontainers&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Swagger](https://img.shields.io/badge/Swagger%2FOpenAPI-85EA2D?style=flat-square&logo=swagger&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black)
-
-## Right now
-
-- Building secure, auditable AI systems on Spring
-- Practising DSA on LeetCode
-- Open to backend internships
+- **530+ LeetCode problems** solved in C++ (115+ Medium) — [profile](https://leetcode.com/u/kavaykhurana/)
+- **Anthropic certified:** [Claude Code in Action](https://verify.skilljar.com/c/3mk62fp7i24s) · [AI Fluency: Framework & Foundations](https://verify.skilljar.com/c/4rcwbfyvk3e7)
+- **Now:** building secure, auditable AI systems on Spring · open to backend / SDE internships
