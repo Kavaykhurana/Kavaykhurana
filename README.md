@@ -1,6 +1,6 @@
 # Kavay Khurana
 
-**Java backend engineer** · Spring Boot · Spring Security · Spring AI · PostgreSQL
+**Java backend engineer** · Spring Boot · Spring Security · Spring AI · PostgreSQL<br>
 B.E. Computer Science & Engineering @ Thapar Institute of Engineering & Technology · Class of 2028
 
 I build backends where AI gets real powers without being trusted blindly. The model can only *ask*: Spring Security decides, sensitive actions need a second human, and every decision lands in an audit log you can verify.
